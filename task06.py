@@ -1,5 +1,5 @@
 def maximum(*args):
-    _max_num = 0
+    _max_num = args[0]
 
     for _num in args:
         if _num > _max_num:
@@ -7,4 +7,4 @@ def maximum(*args):
     return _max_num
 
 
-print(maximum(34, 6, 140, 78, 6, 100))
+print(maximum(-34, -3, -40, -78, -100))
