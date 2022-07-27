@@ -1,5 +1,5 @@
 def hello(_name):
-    _text = f"Hello {_name}!"
+    _text = f"hello {_name}!"
     print(_text)
 
 
