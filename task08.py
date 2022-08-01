@@ -13,9 +13,7 @@ def numbers_to_time(_number):
         _hrs_string = f"{_hours} hours"
 
     elif _hours == 1 and _min == 0:
-        _min = 60
-        _hours = 0
-        _hrs_string = f"{_hours} hours"
+        _hrs_string = f"{_hours} hour"
 
     elif _hours == 1 and _min > 0:
         _hrs_string = f"{_hours} hour"
@@ -28,4 +26,4 @@ def numbers_to_time(_number):
     return _hrs_string + _min_string
 
 
-print(numbers_to_time(133))
+print(numbers_to_time(60))
