@@ -1,6 +1,6 @@
-def hello(_name):
-    _text = f"hello {_name}!"
-    print(_text)
+def hello(name):
+    text = f"hello {name}!"
+    print(text)
 
 
 hello("Tshepo")
