@@ -23,7 +23,7 @@ def numbers_to_time(number):
     else:
         min_string = f", {min} minute"
 
-    return hrs_string + min_string
+    return f"{hrs_string}{min_string}"
 
 
 print(numbers_to_time(60))
