@@ -1,29 +1,29 @@
-def numbers_to_time(_number):
+def numbers_to_time(number):
 
-    _time = _number / 60
-    _hours_str = str(_time)
-    _hrs, _mins = _hours_str.split(".")
-    _hours = int(_hrs)
-    _min = 0
+    time = number / 60
+    hours_str = str(time)
+    hrs, _mins = hours_str.split(".")
+    hours = int(hrs)
+    min = 0
 
-    if _number > 0 and _number != 60:
-        _min = _number % 60
+    if number > 0 and number != 60:
+        min = number % 60
 
-    if _hours > 1 or _hours == 0:
-        _hrs_string = f"{_hours} hours"
+    if hours > 1 or hours == 0:
+        hrs_string = f"{hours} hours"
 
-    elif _hours == 1 and _min == 0:
-        _hrs_string = f"{_hours} hour"
+    elif hours == 1 and min == 0:
+        hrs_string = f"{hours} hour"
 
-    elif _hours == 1 and _min > 0:
-        _hrs_string = f"{_hours} hour"
+    elif hours == 1 and min > 0:
+        hrs_string = f"{hours} hour"
 
-    if _min > 1 or _min == 0:
-        _min_string = f", {_min} minutes"
+    if min > 1 or min == 0:
+        min_string = f", {min} minutes"
     else:
-        _min_string = f", {_min} minute"
+        min_string = f", {min} minute"
 
-    return _hrs_string + _min_string
+    return hrs_string + min_string
 
 
 print(numbers_to_time(60))
