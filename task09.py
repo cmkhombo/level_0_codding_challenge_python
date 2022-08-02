@@ -1,12 +1,12 @@
-def find_vowels(_str):
-    _str_vowels = set()
+def find_vowels(str):
+    str_vowels = set()
 
-    _str = _str.lower()
-    _list_vowels = ["a", "e", "i", "o", "u"]
-    for _char in _str:
-        if _char in _list_vowels:
-            _str_vowels.add(_char)
-    print("Vowels: ", ",".join(_str_vowels))
+    str = str.lower()
+    list_vowels = ["a", "e", "i", "o", "u"]
+    for char in str:
+        if char in list_vowels:
+            str_vowels.add(char)
+    print("Vowels: ", ",".join(str_vowels))
 
 
 find_vowels("Umuzi")
