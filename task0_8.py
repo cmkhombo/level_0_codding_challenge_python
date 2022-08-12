@@ -23,8 +23,15 @@ def numbers_to_time(number):
 
     elif hours > 1 and min > 1:
         print(f"{hours} hours, {min} minutes")
-    else:
-        print("Invalid time format")
+
+    elif hours == 0 and min == 1:
+        print(f"{hours} hours, {min} minute")
+
+    elif hours == 0 and min > 1:
+        print(f"{hours} hours, {min} minutes")
+
+    elif hours == 0 and min == 0:
+        print(f"{hours} hours, {min} minutes")
 
 
-(numbers_to_time(189))
+(numbers_to_time(1))
