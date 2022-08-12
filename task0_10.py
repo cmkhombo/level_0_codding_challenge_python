@@ -3,7 +3,7 @@ def common_letters(str_one, str_two):
     str_two_lower = str_two.lower()
     print(
         "Common letters:",
-        ",".join(set.intersection(set(str_one_lower), set(str_two_lower))),
+        ", ".join(set.intersection(set(str_one_lower), set(str_two_lower))),
     )
 
 
