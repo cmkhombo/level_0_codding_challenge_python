@@ -6,7 +6,7 @@ def find_vowels(str):
     for char in str:
         if char in list_vowels:
             str_vowels.add(char)
-    print("Vowels: ", ",".join(str_vowels))
+    print("Vowels: ", ", ".join(str_vowels))
 
 
 find_vowels("Umuzi")
